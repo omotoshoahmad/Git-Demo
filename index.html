@@ -1,0 +1,96 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ADEGOKE AHMED OMOTOSHO</title>
+  </head>
+  <body>
+    <h1>WE ALWAYS WRITE THIS IS MY FIRST WEBPAGE</h1>
+    <h4>Git Working Locally Commands</h4>
+
+    <p>&nbsp;</p>
+    <h5>Lecture Command Listing - Working Locally, Part One</h5>
+    <pre>
+    pwd
+    git status
+    mate README.md
+    git status
+    git add README.md
+    git status
+    git commit -m &quot;Adding some ipsum&quot;
+    clear
+    git status
+    mate README.md
+    git status
+    git commit -am &quot;Adding more ipsum&quot;
+    git status
+    </pre>
+
+    <p>&nbsp;</p>
+    <h5>Lecture Command Listing -  Working Locally, Part Two</h5>
+    <pre class="prettyprint">
+    pwd
+    git status
+    clear
+    mate index.html
+    git status
+    git add index.html
+    git status
+    mate README.md
+    git status
+    clear
+    git status
+    git add README.md
+    git status
+    git commit -m &quot;A few changes for the website&quot;
+    clear
+    mate README.md
+    mate index.html
+    git status
+    git add .
+    git status
+    git commit -m &quot;A few more changes for website&quot;
+    clear
+    mate README.md
+    git status
+    git add README.md
+    git status
+    git reset HEAD README.md
+    clear
+    git status
+    mate README.md
+    git checkout -- README.md
+    mate README.md
+    git status
+    </pre>
+
+    <p>&nbsp;</p>
+    <h5>Command Reference</h5>
+
+    <p>Express Commit for Tracked files</p>
+    <pre class="prettyprint">
+    git commit -am &quot;Awesome commit message&quot;
+    </pre>
+    <p>Use the <em>-a</em> parameter with the <strong>git commit</strong> command to directly commit newly modified tracked files. <span style=" color:darkred; ">Warning:</span> Only do this for small changes.
+    Tracked files are files that have been previously added to Git (committed or staged).
+    </p>
+
+    <p>Adding All Changed Files</p>
+    <pre class="prettyprint">
+    git add .
+    </pre>
+    <p>The period parameter for the git add command will recursively add all new and newly modified files.</p>
+
+    <p>Unstage File</p>
+    <pre class="prettyprint">
+    git reset HEAD <em>file-name</em>
+    </pre>
+    <p>Following the above command will &quot;unstage&quot; the specified file from Git&#039;s staging area (aka index).</p>
+
+    <p>Backout Working Directory Changes</p>
+    <pre class="prettyprint">
+    git checkout -- <em>file-name</em>
+    </pre>
+    <p>Following the above command will back out any changes made to the specified file and replace it with the version last committed in Git</p>
+  </body>
+</html>
